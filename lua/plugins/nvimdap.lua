@@ -1,3 +1,4 @@
 return {
-  "https://github.com/mfussenegger/nvim-dap.git",
+  "mfussenegger/nvim-dap",
+  config = function() end,
 }
