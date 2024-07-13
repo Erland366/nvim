@@ -3,3 +3,8 @@
 -- Add any additional keymaps here
 vim.api.nvim_set_keymap("n", "<M-u>", "<C-u>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<M-d>", "<C-d>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", {
+  noremap = true,
+  silent = true,
+})
