@@ -37,6 +37,13 @@ return {
         { noremap = true, silent = true, desc = "Jump backwards to the beginning of a word" }
       )
 
+      vim.api.nvim_set_keymap(
+        "n",
+        "<Leader><Leader>e",
+        "<Plug>(easymotion-e)",
+        { noremap = true, silent = true, desc = "Jump forwards to the end of a word" }
+      )
+
       -- Customize EasyMotion settings
       vim.g.EasyMotion_do_mapping = 0
       vim.g.EasyMotion_smartcase = 1
